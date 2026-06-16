@@ -1,0 +1,19 @@
+#hero {
+    background-image: url(images/hero.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+#main-services {
+    background-image: url(images/cut.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+#navBar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+}

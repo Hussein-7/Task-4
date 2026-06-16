@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Services</title>
+</head>
+<body>
+
+<main id="main-services">
+
+<!-- NavBar -->
+<nav id="navBar">
+<div class="container px-4 mx-auto sm:px-8">
+
+    <div class="flex items-center justify-between py-4">
+
+        <div>
+            <img src="images/logo.png" alt="logo" class="w-44">
+        </div>
+
+        <div class="hidden md:block">
+            <ul class="flex gap-10">
+                <li><a href="index.html" class="text-lg font-medium text-gray-500 duration-100 hover:text-pink-500">Home</a></li>
+                <li><a href="services.html" class="text-lg font-medium text-pink-500">Services</a></li>
+                <li><a href="book.html" class="text-lg font-medium text-gray-500 duration-100 hover:text-pink-500">Book</a></li>
+                <li><a href="#foot" class="text-lg font-medium text-gray-500 duration-100 hover:text-pink-500">About</a></li>
+                <li><a href="contact.html" class="text-lg font-medium text-gray-500 duration-100 hover:text-pink-500">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="md:hidden">
+            <button onclick="toggleMenu()" class="text-2xl text-gray-600 focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+    </div>
+
+    <div id="mobileMenu" class="hidden pb-4 md:hidden">
+        <ul class="flex flex-col gap-4">
+            <li><a href="index.html" class="block text-lg font-medium text-gray-500 hover:text-pink-500">Home</a></li>
+            <li><a href="services.html" class="block text-lg font-medium text-pink-500">Services</a></li>
+            <li><a href="book.html" class="block text-lg font-medium text-gray-500 hover:text-pink-500">Book</a></li>
+            <li><a href="#foot" class="block text-lg font-medium text-gray-500 hover:text-pink-500">About</a></li>
+            <li><a href="contact.html" class="block text-lg font-medium text-gray-500 hover:text-pink-500">Contact</a></li>
+        </ul>
+    </div>
+
+</div>
+</nav>
+
+
+<!-- services cards -->
+<section class="container px-4 mx-auto mt-10 mb-32 sm:px-8 md:px-16 lg:px-15">
+
+    <div class="flex flex-col items-center justify-center pb-5">
+        <h2 class="text-3xl font-bold text-center text-gray-800 md:text-4xl lg:text-5xl">Services</h2>
+        <img src="images/download.svg" alt="line" class="pb-10 w-70">
+    </div>
+
+    <div class="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
+
+        <div class="flex flex-col pb-10 space-y-4 text-center duration-300 shadow-md hover:-translate-y-3 rounded-b-xl hover:shadow-lg">
+            <img src="images/skin care.avif" alt="skin care" class="rounded-t-xl">
+            <h3 class="pt-5 text-xl font-bold text-gray-800">Skin Care</h3>
+            <p class="text-gray-600">Comprehensive skincare for healthy, radiant skin</p>
+            <div><a href="#" class="px-8 py-1 text-pink-500 border border-pink-500 rounded-xl">More</a></div>
+        </div>
+
+        <div class="flex flex-col pb-10 space-y-4 text-center duration-300 shadow-md hover:-translate-y-3 rounded-b-xl hover:shadow-lg">
+            <img src="images/makeeup.avif" alt="makeup" class="rounded-t-xl">
+            <h3 class="pt-5 text-xl font-bold text-gray-800">Professional makeup</h3>
+            <p class="text-gray-600">stunning look for your special occasions</p>
+            <div><a href="#" class="px-8 py-1 text-pink-500 border border-pink-500 rounded-xl">More</a></div>
+        </div>
+
+        <div class="flex flex-col pb-10 space-y-4 text-center duration-300 shadow-md hover:-translate-y-3 rounded-b-xl hover:shadow-lg">
+            <img src="images/hair (2).avif" alt="hair" class="rounded-t-xl h-38">
+            <h3 class="pt-5 text-xl font-bold text-gray-800">Hair styling</h3>
+            <p class="text-gray-600">Modern styling that enhances your beauty</p>
+            <div><a href="#" class="px-8 py-1 text-pink-500 border border-pink-500 rounded-xl">More</a></div>
+        </div>
+
+        <div class="flex flex-col pb-10 space-y-4 text-center duration-300 shadow-md hover:-translate-y-3 rounded-b-xl hover:shadow-lg">
+            <img src="images/nails.avif" alt="nails" class="rounded-t-xl">
+            <h3 class="pt-5 text-xl font-bold text-gray-800">Nail Care</h3>
+            <p class="text-gray-600">Beautiful and healthy nails just for you</p>
+            <div><a href="#" class="px-8 py-1 text-pink-500 border border-pink-500 rounded-xl">More</a></div>
+        </div>
+
+        <div class="flex flex-col pb-10 space-y-4 text-center duration-300 shadow-md hover:-translate-y-3 rounded-b-xl hover:shadow-lg">
+            <img src="images/face.webp" alt="cleansing" class="rounded-t-xl">
+            <h3 class="pt-5 text-xl font-bold text-gray-800">Skin Cleansing</h3>
+            <p class="text-gray-600">Deep Cleansing to remove impurities and blackheads</p>
+            <div><a href="#" class="px-8 py-1 text-pink-500 border border-pink-500 rounded-xl">More</a></div>
+        </div>
+
+        <div class="flex flex-col pb-10 space-y-4 text-center duration-300 shadow-md hover:-translate-y-3 rounded-b-xl hover:shadow-lg">
+            <img src="images/hair.avif" alt="hair coloring" class="rounded-t-xl">
+            <h3 class="pt-5 text-xl font-bold text-gray-800">Hair coloring</h3>
+            <p class="text-gray-600">Trendy, long-lasting hair colors for your hair</p>
+            <div><a href="#" class="px-8 py-1 text-pink-500 border border-pink-500 rounded-xl">More</a></div>
+        </div>
+
+        <div class="flex flex-col pb-10 space-y-4 text-center duration-300 shadow-md hover:-translate-y-3 rounded-b-xl hover:shadow-lg">
+            <img src="images/simple makeup.avif" alt="simple makeup" class="rounded-t-xl h-38">
+            <h3 class="pt-5 text-xl font-bold text-gray-800">Simple makeup</h3>
+            <p class="text-gray-600">A natural and elegant makeup with soft finish</p>
+            <div><a href="#" class="px-8 py-1 text-pink-500 border border-pink-500 rounded-xl">More</a></div>
+        </div>
+
+        <div class="flex flex-col pb-10 space-y-4 text-center duration-300 shadow-md hover:-translate-y-3 rounded-b-xl hover:shadow-lg">
+            <img src="images/nails 2.avif" alt="nail extensions" class="rounded-t-xl">
+            <h3 class="pt-5 text-xl font-bold text-gray-800">Nail Extensions</h3>
+            <p class="text-gray-600">Professional nails extension services for stylish nails</p>
+            <div><a href="#" class="px-8 py-1 text-pink-500 border border-pink-500 rounded-xl">More</a></div>
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+
+<!-- footer -->
+<footer id="foot" class="pt-16 bg-gray-900">
+    <div class="container px-6 mx-auto">
+
+        <div class="grid grid-cols-1 gap-10 pb-12 md:grid-cols-2 lg:grid-cols-4">
+
+            <div class="flex flex-col space-y-5">
+                <img src="images/logo.png" alt="logo" class="border border-pink-400 rounded-full w-36">
+                <p class="text-sm leading-relaxed text-gray-400">We care about you & give you the best treatment ever</p>
+                <div class="flex gap-3">
+                    <a href="#" class="flex items-center justify-center transition bg-pink-500 rounded-full w-9 h-9 hover:bg-pink-600">
+                        <i class="text-sm text-white fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="flex items-center justify-center transition bg-pink-500 rounded-full w-9 h-9 hover:bg-pink-600">
+                        <i class="text-sm text-white fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="flex items-center justify-center transition bg-pink-500 rounded-full w-9 h-9 hover:bg-pink-600">
+                        <i class="text-sm text-white fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="#" class="flex items-center justify-center transition bg-pink-500 rounded-full w-9 h-9 hover:bg-pink-600">
+                        <i class="text-sm text-white fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-col space-y-5">
+                <h3 class="text-lg font-bold text-white">QUICK LINKS</h3>
+                <ul class="space-y-3">
+                    <li><a href="index.html" class="text-sm text-gray-400 transition hover:text-pink-400">Home</a></li>
+                    <li><a href="services.html" class="text-sm text-gray-400 transition hover:text-pink-400">Services</a></li>
+                    <li><a href="book.html" class="text-sm text-gray-400 transition hover:text-pink-400">Book Appointment</a></li>
+                    <li><a href="contact.html" class="text-sm text-gray-400 transition hover:text-pink-400">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="flex flex-col space-y-5">
+                <h3 class="text-lg font-bold text-white">OUR SERVICES</h3>
+                <ul class="space-y-3">
+                    <li><a href="services.html" class="text-sm text-gray-400 transition hover:text-pink-400">Skin Care</a></li>
+                    <li><a href="services.html" class="text-sm text-gray-400 transition hover:text-pink-400">Makeup</a></li>
+                    <li><a href="services.html" class="text-sm text-gray-400 transition hover:text-pink-400">Hair Styling</a></li>
+                    <li><a href="services.html" class="text-sm text-gray-400 transition hover:text-pink-400">Nail Care</a></li>
+                </ul>
+            </div>
+
+            <div class="flex flex-col space-y-5">
+                <h3 class="text-lg font-bold text-white">CONTACT</h3>
+                <div class="flex items-start gap-3">
+                    <i class="mt-1 text-pink-400 fa-solid fa-location-dot"></i>
+                    <p class="text-sm text-gray-400">Palestine, Gaza, Homaid street</p>
+                </div>
+                <div class="flex items-center gap-3">
+                    <i class="text-pink-400 fa-solid fa-phone"></i>
+                    <p class="text-sm text-gray-400">+0123-456789</p>
+                </div>
+                <div class="flex items-center gap-3">
+                    <i class="text-pink-400 fa-regular fa-envelope"></i>
+                    <p class="text-sm text-gray-400">Zohracenter@gmail.com</p>
+                </div>
+                <div class="flex items-start gap-3">
+                    <i class="mt-1 text-pink-400 fa-solid fa-clock"></i>
+                    <p class="text-sm text-gray-400">Sun - Thu: 8:00 am - 8:00 pm</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="border-t border-gray-700">
+        <div class="container flex justify-center px-6 py-5 mx-auto">
+            <p class="text-sm text-gray-500">&copy; 2026 Zohra Center - All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/navbar.js"></script>
+</body>
+</html>
